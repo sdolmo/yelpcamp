@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: true})); //what does this code mean?
 app.set("view engine", "ejs");
 
 var campgrounds = [
@@ -21,7 +21,7 @@ app.get("/", function(req, res){
   res.render("landing")
 });
 
-app.get("/campgrounds", function(re1, res){
+app.get("/campgrounds", function(req, res){
   res.render("campgrounds", {campgrounds: campgrounds})
 });
 
@@ -39,6 +39,6 @@ app.get("/campgrounds/new", function(req, res){
   res.render("new.ejs")
 });
 
-app.listen(3000, function(){
+app.listen(4000, function(){
   console.log("Serving it up~!")
 })
