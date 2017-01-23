@@ -1,34 +1,14 @@
-var express     = require("express"),
-    app         = express(),
-    bodyParser  = require("body-parser"),
-    mongoose    = require("mongoose");
+var bodyParser  = require("body-parser"),
+    mongoose    = require("mongoose"),
+    express     = require("express"),
+    app         = express();
+    Campground  = require("./models/campground");
+    seedDB      = require("./seeds.js");
 
 mongoose.connect("mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true})); //what does this code mean?
 app.set("view engine", "ejs");
-
-// SCHEMA SETUP
-var campgroundSchema = new mongoose.Schema({
-  name: String,
-  image: String,
-  description: String
-});
-
-var Campground = mongoose.model("Campground", campgroundSchema);
-
-// Populate DB with some Campgrounds
-// Campground.create({
-//   name: "Bear Mountain",
-//   image: "https://farm2.staticflickr.com/1281/4684194306_18ebcdb01c.jpg",
-//   description: "CAUTION: There are bears wondering about; Brown bears, Black bears, Grizzly bears, even Polar Bears!"
-// }, function(err, campground){
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log("NEWLY CREATED CAMPGROUND: ");
-//     console.log(campground);
-//   }
-// });
+seedDB();
 
 app.get("/", function(req, res){
   res.render("landing")
@@ -73,7 +53,7 @@ app.get("/campgrounds/new", function(req, res){
 // SHOW - Displays more info about one campground
 app.get("/campgrounds/:id", function(req, res){
   // Find the campground with provided ID
-  Campground.findById(req.params.id, function(err, foundCampground){
+  Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground){
     if (err){
       console.log(err);
     } else {
