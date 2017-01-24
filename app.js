@@ -19,7 +19,7 @@ mongoose.connect("mongodb://localhost/yelp_camp");
 app.use(bodyParser.urlencoded({extended: true})); //what does this code mean?
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
-seedDB();
+// seedDB(); // seed the DB
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
