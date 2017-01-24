@@ -6,17 +6,17 @@ var data = [
   {
     name: "Bear Mountain",
     image: "http://www.theparentreport.com/wp-content/uploads/2012/02/2-396_camping_bear_tent_sf_fl.jpg",
-    description: "CAUTION: There are Bears on this mountain"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper mauris tortor, non finibus tortor consectetur pellentesque. Aliquam sagittis vulputate tortor, sit amet finibus augue faucibus vel. Pellentesque gravida tempor urna, a dignissim leo vehicula volutpat. Maecenas non orci luctus, ultricies lorem id, mattis tellus. Integer purus ante, vestibulum at leo vel, aliquet dignissim augue. Vestibulum augue odio, eleifend eu tellus sed, blandit dictum eros. Etiam non vestibulum arcu. Sed ultrices neque non nibh hendrerit, vel cursus urna condimentum. Mauris venenatis mauris nec orci efficitur tempus. Etiam facilisis purus vel sollicitudin rhoncus. Phasellus accumsan posuere nisl vitae hendrerit. Nullam placerat volutpat rutrum. Nam tincidunt orci leo, ac sollicitudin urna consequat eget. Nullam imperdiet vulputate dapibus. Pellentesque sagittis scelerisque urna ut congue."
   },
   {
     name: "Camp Deer Park",
     image: "http://gazettereview.com/wp-content/uploads/2016/02/Camping1.jpg",
-    description: "blah, blah, blah"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper mauris tortor, non finibus tortor consectetur pellentesque. Aliquam sagittis vulputate tortor, sit amet finibus augue faucibus vel. Pellentesque gravida tempor urna, a dignissim leo vehicula volutpat. Maecenas non orci luctus, ultricies lorem id, mattis tellus. Integer purus ante, vestibulum at leo vel, aliquet dignissim augue. Vestibulum augue odio, eleifend eu tellus sed, blandit dictum eros. Etiam non vestibulum arcu. Sed ultrices neque non nibh hendrerit, vel cursus urna condimentum. Mauris venenatis mauris nec orci efficitur tempus. Etiam facilisis purus vel sollicitudin rhoncus. Phasellus accumsan posuere nisl vitae hendrerit. Nullam placerat volutpat rutrum. Nam tincidunt orci leo, ac sollicitudin urna consequat eget. Nullam imperdiet vulputate dapibus. Pellentesque sagittis scelerisque urna ut congue."
   },
   {
     name: "Lake Laugai",
     image: "http://haileyidaho.com/wp-content/uploads/2015/01/Stanley-lake-camping-Credit-Carol-Waller-2011.jpg",
-    description: "blah, blah, blah"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper mauris tortor, non finibus tortor consectetur pellentesque. Aliquam sagittis vulputate tortor, sit amet finibus augue faucibus vel. Pellentesque gravida tempor urna, a dignissim leo vehicula volutpat. Maecenas non orci luctus, ultricies lorem id, mattis tellus. Integer purus ante, vestibulum at leo vel, aliquet dignissim augue. Vestibulum augue odio, eleifend eu tellus sed, blandit dictum eros. Etiam non vestibulum arcu. Sed ultrices neque non nibh hendrerit, vel cursus urna condimentum. Mauris venenatis mauris nec orci efficitur tempus. Etiam facilisis purus vel sollicitudin rhoncus. Phasellus accumsan posuere nisl vitae hendrerit. Nullam placerat volutpat rutrum. Nam tincidunt orci leo, ac sollicitudin urna consequat eget. Nullam imperdiet vulputate dapibus. Pellentesque sagittis scelerisque urna ut congue."
   }
 ]
 
