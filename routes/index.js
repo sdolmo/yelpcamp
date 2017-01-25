@@ -18,16 +18,16 @@ router.get("/register", function(req, res){
   res.render("register");
 });
 
-// handeling user signup
+// handeling user sign up
 router.post("/register", function(req, res) {
   var newUser = new User({username: req.body.username});
   // the .register method is provided by the passport-local-mongoose module
   User.register(newUser, req.body.password, function(err, user){
     if(err){
-      console.log(err);
-      return res.render("register");
+      return res.render("register", {"error": err.message});
     }
     passport.authenticate("local")(req, res, function(){
+      req.flash("success", "Welcome to YelpCamp " + user.username);
       res.redirect("/campgrounds");
     });
   });
@@ -55,6 +55,7 @@ router.post("/login", passport.authenticate("local", {
 // logout route
 router.get("/logout", function(req, res){
   req.logout();
+  req.flash("success", "You logged out")
   res.redirect("/campgrounds")
 })
 
